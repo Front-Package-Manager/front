@@ -2,26 +2,17 @@
 
 A small cross-platform package manager base for Linux, BSD and TempleOS.
 
-## C example
+## Usage
 
-```c
-#include "package_manager.c"
+Run the `front-pkg` launcher with sudo on Linux and BSD:
 
-int main(void) {
-    printf("%s\n", detect_package_manager());
-    return 0;
-}
+```
+sudo front-pkg
 ```
 
-## C++ example
+On TempleOS, just invoke `front`:
 
-```cpp
-#include "package_manager.cpp"
-int main() { return 0; }
+```
+front
 ```
 
-## Perl example
-
-```perl
-require './package_manager.pl';
-```
