@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+# Front package manager launcher for TempleOS
+set -e
+if [ "$(uname)" != "TempleOS" ]; then
+  echo "This Front launcher is intended for TempleOS" >&2
+  exit 1
+fi
+
+echo "Accessing Front on TempleOS"
