@@ -1,2 +1,2 @@
-# front
-A package manager for Linux/BSD/TempleOS.
+# Front
+A for-you package manager for Linux/BSD/TempleOS.
