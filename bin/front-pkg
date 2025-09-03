@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+# Front package manager launcher for Unix-like systems
+set -e
+case "$(uname)" in
+  Linux)
+    echo "Accessing Front on Linux"
+    ;;
+  FreeBSD|NetBSD|OpenBSD)
+    echo "Accessing Front on BSD"
+    ;;
+  TempleOS)
+    echo "Use 'front' on TempleOS"
+    exit 1
+    ;;
+  *)
+    echo "Front is not supported on this platform" >&2
+    exit 1
+    ;;
+esac
